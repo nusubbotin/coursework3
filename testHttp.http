@@ -1,0 +1,26 @@
+### Add
+http://localhost:8080/exam/java/add?question=q1&answer=a1
+
+### Add
+http://localhost:8080/exam/java/add?question=q2&answer=a2
+
+### Add
+http://localhost:8080/exam/java/add?question=q3&answer=a3
+
+### Add
+http://localhost:8080/exam/java/add?question=q4&answer=a4
+
+### Add
+http://localhost:8080/exam/java/add?question=q5&answer=a5
+
+### Get
+http://localhost:8080/exam/java
+
+### Del 5
+http://localhost:8080/exam/java/remove?question=q5&answer=a5
+
+### rundom -> Exception
+http://localhost:8080/exam/get/7
+
+### rundom Valid
+http://localhost:8080/exam/get/3
