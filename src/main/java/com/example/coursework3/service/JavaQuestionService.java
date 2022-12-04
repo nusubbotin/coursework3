@@ -1,5 +1,6 @@
 package com.example.coursework3.service;
 
+import com.example.coursework3.exception.UnCorrectAmountQuestionException;
 import com.example.coursework3.model.Question;
 import org.springframework.stereotype.Service;
 
@@ -37,6 +38,10 @@ public class JavaQuestionService implements QuestionService{
 
     @Override
     public Question getRandomQuestion() {
+        if (questions.isEmpty()) {
+            throw new UnCorrectAmountQuestionException();
+        }
+
         return questions.stream()
                 .skip(RANDOM.nextInt(0, questions.size()))
                 .findFirst()
